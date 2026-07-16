@@ -121,7 +121,7 @@ document.body.appendChild(heart);
 
 // CONFETTI
 
-const const confettiItems = [
+const confettiItems = [
 "🎉",
 "🎊",
 "✨",
