@@ -415,3 +415,167 @@ font-size:42px;
 }
 
 }
+/* ========================= */
+/* BUTTERFLIES */
+/* ========================= */
+
+.butterfly{
+
+position:fixed;
+
+bottom:-50px;
+
+z-index:999;
+
+pointer-events:none;
+
+animation:floatButterfly linear infinite;
+
+opacity:0.8;
+}
+
+@keyframes floatButterfly{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+opacity:0;
+}
+
+10%{
+
+opacity:1;
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+}
+
+}
+
+/* ========================= */
+/* FLOATING HEARTS */
+/* ========================= */
+
+.floating-heart{
+
+position:absolute;
+
+bottom:0;
+
+font-size:24px;
+
+animation:heartFloat 5s linear forwards;
+
+pointer-events:none;
+}
+
+@keyframes heartFloat{
+
+0%{
+
+transform:translateY(0);
+
+opacity:1;
+}
+
+100%{
+
+transform:translateY(-300px);
+
+opacity:0;
+}
+
+}
+
+/* ========================= */
+/* SURPRISE BUTTON */
+/* ========================= */
+
+.surprise-btn{
+
+margin-top:40px;
+
+padding:15px 30px;
+
+font-size:18px;
+
+font-weight:bold;
+
+border:none;
+
+border-radius:50px;
+
+background:#d4af37;
+
+color:#3b0010;
+
+cursor:pointer;
+
+transition:0.3s;
+
+box-shadow:
+0 8px 25px rgba(0,0,0,0.2);
+}
+
+.surprise-btn:hover{
+
+transform:scale(1.05);
+
+box-shadow:
+0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* ========================= */
+/* SECTION SPACING */
+/* ========================= */
+
+.memory-section,
+.beach-section,
+.final-section{
+
+position:relative;
+overflow:hidden;
+}
+
+/* ========================= */
+/* GOLDEN GLOW */
+/* ========================= */
+
+.hero-content,
+.memory-section h2,
+.beach-section h2,
+.final-section h1{
+
+text-shadow:
+0 0 10px rgba(212,175,55,0.25);
+}
+
+/* ========================= */
+/* IMAGE HOVER EFFECT */
+/* ========================= */
+
+.gallery-grid img:hover{
+
+transform:scale(1.04);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.25);
+}
+
+/* ========================= */
+/* SMOOTH SCROLL */
+/* ========================= */
+
+html{
+
+scroll-behavior:smooth;
+}
