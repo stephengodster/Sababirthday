@@ -571,6 +571,7 @@ box-shadow:
 0 15px 40px rgba(0,0,0,0.25);
 }
 
+
 /* ========================= */
 /* SMOOTH SCROLL */
 /* ========================= */
@@ -578,4 +579,76 @@ box-shadow:
 html{
 
 scroll-behavior:smooth;
+}
+.gallery-grid img{
+
+width:100%;
+
+height:auto;
+
+display:block;
+
+border-radius:25px;
+
+box-shadow:
+0 15px 35px rgba(0,0,0,0.18);
+
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+
+transform:scale(1.03);
+}
+.beach-section{
+
+min-height:100vh;
+
+background:
+linear-gradient(
+rgba(0,0,0,0.45),
+rgba(0,0,0,0.45)
+),
+
+url("beach.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:80px 30px;
+
+color:white;
+}
+
+.beach-section h2{
+
+font-size:48px;
+
+color:#d4af37;
+
+text-shadow:
+0 0 20px rgba(212,175,55,0.5);
+}
+.letter-section,
+.gallery,
+.memory-section,
+.beach-section,
+.final-section{
+
+padding-top:120px;
+
+padding-bottom:120px;
 }
