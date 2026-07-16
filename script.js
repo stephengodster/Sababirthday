@@ -97,3 +97,59 @@ alert(
 });
 
 }
+// FLOATING HEARTS
+
+for(let i = 0; i < 12; i++){
+
+const heart = document.createElement("div");
+
+heart.innerHTML = "❤️";
+
+heart.classList.add("floating-item");
+
+heart.style.left = Math.random()*100 + "vw";
+
+heart.style.animationDuration =
+(10 + Math.random()*10) + "s";
+
+heart.style.animationDelay =
+(Math.random()*8) + "s";
+
+document.body.appendChild(heart);
+
+}
+
+// CONFETTI
+
+const const confettiItems = [
+"🎉",
+"🎊",
+"✨",
+"🌟",
+"💖",
+"💕",
+"💗",
+"🌹"
+];
+
+for(let i = 0; i < 15; i++){
+
+const confetti = document.createElement("div");
+
+confetti.innerHTML =
+confettiItems[Math.floor(Math.random()*confettiItems.length)];
+
+confetti.classList.add("floating-item");
+
+confetti.style.left =
+Math.random()*100 + "vw";
+
+confetti.style.animationDuration =
+(8 + Math.random()*10) + "s";
+
+confetti.style.animationDelay =
+(Math.random()*8) + "s";
+
+document.body.appendChild(confetti);
+
+}
