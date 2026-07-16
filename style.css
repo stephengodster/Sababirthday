@@ -727,3 +727,47 @@ font-size:22px;
 
 line-height:2;
 }
+/* FLOATING ITEMS */
+
+.floating-item{
+
+position:fixed;
+
+bottom:-50px;
+
+z-index:998;
+
+pointer-events:none;
+
+font-size:22px;
+
+opacity:0.85;
+
+animation:floatMagic linear infinite;
+}
+
+@keyframes floatMagic{
+
+0%{
+
+transform:
+translateY(0)
+rotate(0deg);
+
+opacity:0;
+}
+
+10%{
+
+opacity:1;
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+rotate(360deg);
+
+opacity:0;
+}
+}
